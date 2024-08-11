@@ -40,7 +40,7 @@
 const mongoose = require('mongoose');
 
 // Connect to MongoDB
-const connect = mongoose.connect("mongodb+srv://tanjimahammad31:frgxjlnpV9mpnbiD@login.s1uieyr.mongodb.net/Feedback", {
+const connect = mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
